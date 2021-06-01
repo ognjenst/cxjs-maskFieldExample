@@ -10,19 +10,19 @@ module.exports = {
                     ie: 11,
                     firefox: 30,
                     edge: 12,
-                    safari: 9
+                    safari: 9,
                 },
                 corejs: 3,
                 modules: false,
                 loose: true,
-                useBuiltIns: 'usage',
+                useBuiltIns: "usage",
                 cx: {
                     imports: {
-                        useSrc: true
-                    }
-                }
-            }
-        ]
+                        useSrc: true,
+                    },
+                },
+            },
+        ],
     ],
-    plugins: []
+    plugins: [["@babel/plugin-proposal-private-methods", { loose: false }]],
 };
