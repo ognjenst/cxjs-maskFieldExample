@@ -14,7 +14,7 @@ export default (
 					//this.store.init("test", "123756789");
 				},
 				test() {
-					console.log(this.store.get('test'));
+					// console.log(this.store.get('test'));
 				},
 			}}
 		>
