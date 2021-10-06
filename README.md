@@ -9,6 +9,7 @@ Text Field component that allows you to add a custom mask on it. **_You need to 
 Mask Input Field can be installed with both Yarn and NPM:
 
 `yarn add cx-mask-input-field`
+
 `npm install cx-mask-input-field`
 
 ## Properties
@@ -23,7 +24,10 @@ Mask string. Default format characters are:<br/>
 
 `*`: `A-Z, a-z, 0-9`
 
-Any character can be escaped with a backslash. It will appear as a double backslash in JS strings. For example, a German phone mask with unremoveable prefix +49 will look like <code>mask="+4\\9 99 999 99"</code> or <code>mask={'+4\\\\9 99 999 99'}</code>
+Any character can be escaped with a backslash. It will appear as a double backslash in JS strings. For example, a German phone mask with unremoveable prefix +49 will look like 
+<code>mask="+4\\9 99 999 99"</code> or 
+
+<code>mask={'+4\\\\9 99 999 99'}</code>
 
 ### `maskPlaceholder` : `string`
 
