@@ -26,9 +26,10 @@ Mask string. Default format characters are:<br/>
 
 Any character can be escaped with a backslash. It will appear as a double backslash in JS strings. For example, a German phone mask with unremoveable prefix +49 will look like 
 
-<code>mask="+4\\9 99 999 99"</code> or 
-
-<code>mask={'+4\\\\9 99 999 99'}</code>
+```jsx
+<MaskInputField value-bind="data" mask="+4\\9 99 999 99" />;
+<MaskInputField value-bind="data" mask={'+4\\\\9 99 999 99'} />;
+```
 
 ### `maskPlaceholder` : `string`
 
