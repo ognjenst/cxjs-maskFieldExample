@@ -109,9 +109,9 @@ Component is based on [react-input-mask](https://www.npmjs.com/package/react-inp
 
 ```jsx
 
-import { MaskInputField } from  'cx-mask-input-field';
+import { MaskInputField } from 'cx-mask-input-field';
 
-<MaskInputField  value-bind="data"  mask="99.99.99.99"  maskPlaceholder="_"  />;
+<MaskInputField value-bind="data" mask="99.99.99.99" maskPlaceholder="_" />;
 
 ```
 
