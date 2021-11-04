@@ -16,7 +16,8 @@
       "src"
    ],
    "dependencies": {
-      "react-input-mask": "2.0.4"
+      "react-input-mask": "2.0.4",
+      "cx": "^21.9.1"
    },
    "homepage": "https://github.com/ognjenst/cxjs-widget-mask-field#readme",
    "repository": {
