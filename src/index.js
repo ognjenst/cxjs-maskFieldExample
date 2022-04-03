@@ -1,4 +1,5 @@
-import { Field, getFieldTooltip, tooltipMouseLeave, tooltipMouseMove, tooltipParentWillReceiveProps } from 'cx/widgets';
+import { VDOM } from "cx/ui";
+import { Field, getFieldTooltip, tooltipMouseLeave, tooltipMouseMove } from 'cx/widgets';
 import InputMask from 'react-input-mask';
 
 export default class MaskInputField extends Field {
