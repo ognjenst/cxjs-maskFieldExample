@@ -1,10 +1,15 @@
 CxJS Mask Input Field
 ---
-![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) [![Node.js Package](https://github.com/ognjenst/cxjs-widget-mask-field/actions/workflows/npm-publish.yml/badge.svg?branch=master)](https://github.com/ognjenst/cxjs-widget-mask-field/actions/workflows/npm-publish.yml)
+[![Node.js Package](https://github.com/ognjenst/cxjs-widget-mask-field/actions/workflows/npm-publish.yml/badge.svg?branch=master)](https://github.com/ognjenst/cxjs-widget-mask-field/actions/workflows/npm-publish.yml)
+---
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
 --
+
   
 
 <!-- #### Chout out out [Demo](https://angry-kirch-e6040c.netlify.app/dashboard) -->
+
+  
 
   
 
@@ -12,7 +17,11 @@ Text Field component that allows you to add a custom mask on it. **_You need to 
 
   
 
+  
+
 ## Install
+
+  
 
   
 
@@ -20,34 +29,63 @@ Mask Input Field can be installed with both Yarn and NPM:
 
   
 
+  
+
 `yarn add cx-mask-input-field`
+
+  
 
   
 
 `npm install cx-mask-input-field`
 
+  
+
 ### You need to change the following loder in webpack.config.js:
-  ```jsx
+
+```jsx
+
 rules: [
-	{
-		test: /\.js$/,
-		include: [p('common'), p('app'), /packages[\\\/]cx/, /node_modules[\\\/](cx|cx-react|cx-theme-\w*|cx-google-maps)[\\\/]/,
-		use: { loader:  'babel-loader', options:  babelCfg },
-	}
-	...
-```
 
-Into: 
-
-  ```jsx
 {
-	test: /\.js$/,
-	include: [p('common'), p('app'), /packages[\\\/]cx/, /node_modules[\\\/](cx|cx-.+)[\\\/]/,],
-	use: { loader:  'babel-loader', options:  babelCfg },
+
+test: /\.js$/,
+
+include: [p('common'), p('app'), /packages[\\\/]cx/, /node_modules[\\\/](cx|cx-react|cx-theme-\w*|cx-google-maps)[\\\/]/,
+
+use: { loader:  'babel-loader', options:  babelCfg },
+
 }
+
 ...
+
 ```
+
+  
+
+Into:
+
+  
+
+```jsx
+
+{
+
+test: /\.js$/,
+
+include: [p('common'), p('app'), /packages[\\\/]cx/, /node_modules[\\\/](cx|cx-.+)[\\\/]/,],
+
+use: { loader: 'babel-loader', options: babelCfg },
+
+}
+
+...
+
+```
+
 ## Properties
+
+  
 
   
 
@@ -55,7 +93,11 @@ Into:
 
   
 
+  
+
 Mask string. Default format characters are:<br/>
+
+  
 
   
 
@@ -63,7 +105,11 @@ Mask string. Default format characters are:<br/>
 
   
 
+  
+
 `a`: `A-Z, a-z`<br/>
+
+  
 
   
 
@@ -71,17 +117,29 @@ Mask string. Default format characters are:<br/>
 
   
 
+  
+
 Any character can be escaped with a backslash. It will appear as a double backslash in JS strings. For example, a German phone mask with unremoveable prefix +49 will look like
+
+  
 
   
 
 ```jsx
 
+  
+
 <MaskInputField  value-bind="data"  mask="+4\\9 99 999 99"  />;
+
+  
 
 <MaskInputField  value-bind="data"  mask={'+4\\\\9 99 999 99'}  />;
 
+  
+
 ```
+
+  
 
   
 
@@ -89,7 +147,11 @@ Any character can be escaped with a backslash. It will appear as a double backsl
 
   
 
+  
+
 Character to cover unfilled parts of the mask. Default character is "\_". If set to null or empty string, unfilled parts will be empty as in ordinary input.
+
+  
 
   
 
@@ -97,7 +159,11 @@ Character to cover unfilled parts of the mask. Default character is "\_". If set
 
   
 
+  
+
 ### react-input-mask
+
+  
 
   
 
@@ -105,21 +171,35 @@ Component is based on [react-input-mask](https://www.npmjs.com/package/react-inp
 
   
 
+  
+
 ## Example
+
+  
 
   
 
 ```jsx
 
-import MaskInputField from 'cx-mask-input-field';
+  
 
-<MaskInputField value-bind="data" mask="99.99.99.99" maskPlaceholder="_" />;
+import { MaskInputField } from  'cx-mask-input-field';
+
+  
+
+<MaskInputField  value-bind="data"  mask="99.99.99.99"  maskPlaceholder="_"  />;
+
+  
 
 ```
 
   
 
+  
+
 ## License
+
+  
 
   
 
