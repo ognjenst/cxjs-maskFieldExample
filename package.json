@@ -1,6 +1,6 @@
 {
    "name": "cx-mask-input-field",
-   "version": "1.0.3",
+   "version": "1.0.4",
    "description": "Mask input field wrapped in cx component.",
    "main": "./src/index.js",
    "author": "Ognjen Stefanovic",
